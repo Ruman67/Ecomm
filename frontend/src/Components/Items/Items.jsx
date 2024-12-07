@@ -1,18 +1,17 @@
-import React from 'react'
+import React from 'react';
 import './Items.css';
-const Items = (props) => {
+
+const Items = ({ image, name, new_price, old_price }) => {
   return (
-    <div className='item'>
-        <img src={props.image} alt="" className="src" />
-        <p>
-            {props.name}
-        </p>
+    <div className="item">
+      <img src={image} alt={name} className="item-image" />
+      <p>{name}</p>
       <div className="items-prices">
-        <div className="items-new-prices">{props.new_price}</div>
-        <div className="items-old-prices">{props.old_price}</div>
+        <div className="items-new-prices">{new_price}</div>
+        <div className="items-old-prices">{old_price}</div> {/* Old price will have line-through */}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Items
+export default Items;
