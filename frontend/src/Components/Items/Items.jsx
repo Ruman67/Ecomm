@@ -7,8 +7,8 @@ const Items = ({ image, name, new_price, old_price }) => {
       <img src={image} alt={name} className="item-image" />
       <p>{name}</p>
       <div className="items-prices">
-        <div className="items-new-prices">{new_price}</div>
-        <div className="items-old-prices">{old_price}</div> {/* Old price will have line-through */}
+        <div className="items-new-prices">${new_price}</div>
+        <div className="items-old-prices">${old_price}</div> {/* Old price will have line-through */}
       </div>
     </div>
   );
