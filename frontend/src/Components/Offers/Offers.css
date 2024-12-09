@@ -1,51 +1,104 @@
-.offers{
-display:flex;
-width: 65%;
-height: 60vh;
-margin: auto;
-padding: 0px 140px; 
-margin-bottom: 150px;
-background: linear-gradient(180deg, #fde1ff 0%,#e1ffea22 80%);
-
+.offers {
+  display: flex;
+  flex-wrap: wrap;
+  width: 65%;
+  height: auto;
+  margin: auto;
+  padding: 0px 140px;
+  margin-bottom: 150px;
+  background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 80%);
+  gap: 50px;
 }
-.offers-left{
-    flex:1;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
 
+.offers-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.offers-left button{
-    height: 70px;
-    width: 100px;
-border-radius: 20px;
-background:#ff4141;
-border:none;
-color: white;
-font-size: 22px;
-font-weight: 500;
-margin-top: 30px;
-cursor: pointer;
-}
-.offers-left h1{
-    display:flex;
-    color: #171717;
-    font-size: 22px;
-    font-weight: 600;
-    
-}
-.offers-left p{
-    color: #171717;
-    font-size:22px;
-    font-weight:600; 
-}
-.offers-right{
-    flex:1;
-    display:flex;
-    align-items:center;
-    justify-content: flex-end;
-    padding-top: 50px;
 
+.offers-left button {
+  height: 70px;
+  width: 150px;
+  border-radius: 20px;
+  background: #ff4141;
+  border: none;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 30px;
+  cursor: pointer;
+}
 
+.offers-left h1 {
+  color: #171717;
+  font-size: 40px;
+  font-weight: 600;
+}
 
+.offers-left p {
+  color: #171717;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.offers-middle {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.offers-middle h1 {
+  color: #454545;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.offers-middle p {
+  color: #454545;
+  font-size: 20px;
+}
+
+.offers-middle div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 730px;
+  height: 70px;
+  border-radius: 80px;
+  border: 1px solid #e3e3e3;
+  overflow: hidden;
+}
+
+.offers-middle input {
+  width: 70%;
+  margin-left: 30px;
+  border: none;
+  color: #616161;
+  font-family: Poppins;
+  font-size: 16px;
+  outline: none;
+}
+
+.offers-middle button {
+  width: 210px;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  background: black;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.offers-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
