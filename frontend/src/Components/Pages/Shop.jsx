@@ -4,6 +4,7 @@ import Popular from '../Popular/Popular'
 import Offers from '../Offers/Offers'
 import NewCollections from '../NewCollections/NewCollections'
 import Newsletter from '../Newsletter/Newsletter'
+
 const Shop = () => {
   return (
     <div>
@@ -12,6 +13,7 @@ const Shop = () => {
       <Offers/>
       <NewCollections/>
       <Newsletter/>
+    
     </div>
   )
 }
